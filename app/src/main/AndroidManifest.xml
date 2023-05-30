@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.capstone">
+    <!-- 인터넷 사용 권한 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 파이어베이스 Storage 읽기,쓰기 권한 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="격리 중!"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Capstone">
+        <activity
+            android:name=".Activity.Activity12Search"
+            android:exported="true" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity11Notice"
+            android:exported="true" />
+        <activity
+            android:name=".Waitingforapproval"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity2Login"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity3SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity4Certified"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity5Main"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity6Reader"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity7Writer"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity8Individchat"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity9Groupchat"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Activity10Listitem"
+            android:exported="true" /> <!-- 처음 시작할 액티비티 -->
+        <activity
+            android:name=".Activity.Activity1Intro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
